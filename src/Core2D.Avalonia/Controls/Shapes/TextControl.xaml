@@ -9,7 +9,15 @@
              xmlns:Designer="clr-namespace:Core2D.Editor.Designer;assembly=Core2D"
              Design.DataContext="{Static Designer:DesignerContext.Text}"
              Design.Width="250" Design.Height="400">
-    <TabControl Classes="default">
+    <StackPanel>
+        <TextBlock Text="Hello from Text" Classes="default"></TextBlock>
+        <TabControl Classes="default">
+            <TabItem Header="Path" Classes="property">
+                <TextBlock Text="Hello from TabItem Text" Classes="default"></TextBlock>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+    <!--<TabControl Classes="default">
         <TabItem Header="Text" Classes="property">
             <Grid RowDefinitions="Auto,Auto,*" ColumnDefinitions="Auto,*">
                 <TextBlock Text="Name" Classes="left" Grid.Row="0" Grid.Column="0"/>
@@ -18,22 +26,22 @@
                 <TextBox Text="{Binding Text, Mode=TwoWay}" Classes="left" Grid.Row="1" Grid.Column="1"/>
                 <TabControl Classes="default" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
                     <TabItem Header="TopLeft" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding TopLeft}"/>
+                        <presenters:CachedContentPresenter Name="TopLeft" DataContext="{Binding TopLeft}"/>
                     </TabItem>
                     <TabItem Header="BottomRight" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding BottomRight}"/>
+                        <presenters:CachedContentPresenter Name="BottomRight" DataContext="{Binding BottomRight}"/>
                     </TabItem>
                 </TabControl>
             </Grid>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
         <TabItem Header="Style" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Style}"/>
+            <presenters:CachedContentPresenter Name="Style" DataContext="{Binding Style}"/>
         </TabItem>
-    </TabControl>
+    </TabControl>-->
 </UserControl>

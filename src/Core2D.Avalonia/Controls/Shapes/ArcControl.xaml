@@ -20,28 +20,28 @@
                 <CheckBox IsChecked="{Binding IsFilled, Mode=TwoWay}" Classes="left" Grid.Row="2" Grid.Column="1"/>
                 <TabControl Classes="default" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2">
                     <TabItem Header="Point1" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Point1}"/>
+                        <presenters:CachedContentPresenter Name="Point1" DataContext="{Binding Point1}"/>
                     </TabItem>
                     <TabItem Header="Point2" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Point2}"/>
+                        <presenters:CachedContentPresenter Name="Point2" DataContext="{Binding Point2}"/>
                     </TabItem>
                     <TabItem Header="Point3" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Point3}"/>
+                        <presenters:CachedContentPresenter Name="Point3" DataContext="{Binding Point3}"/>
                     </TabItem>
                     <TabItem Header="Point4" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Point4}"/>
+                        <presenters:CachedContentPresenter Name="Point4" DataContext="{Binding Point4}"/>
                     </TabItem>
                 </TabControl>
             </Grid>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
         <TabItem Header="Style" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Style}"/>
+            <presenters:CachedContentPresenter Name="Style" DataContext="{Binding Style}"/>
         </TabItem>
     </TabControl>
 </UserControl>

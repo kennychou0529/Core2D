@@ -5,6 +5,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Presenters;
 using System;
 using System.Collections.Generic;
+using Avalonia.Media;
 
 namespace Core2D.Avalonia.Presenters
 {
@@ -19,6 +20,12 @@ namespace Core2D.Avalonia.Presenters
         public CachedContentPresenter()
         {
             this.GetObservable(DataContextProperty).Subscribe((value) => Content = value);
+        }
+
+        public override void Render(DrawingContext context)
+        {
+            System.Diagnostics.Debug.WriteLine($"Render: {Name} : {Content?.GetType()}");
+            base.Render(context);
         }
 
         protected override IControl CreateChild()

@@ -27,10 +27,10 @@
             </Grid>
         </TabItem>
         <TabItem Header="StartTrigger" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding StartTrigger}"/>
+            <presenters:CachedContentPresenter Name="StartTrigger" DataContext="{Binding StartTrigger}"/>
         </TabItem>
         <TabItem Header="EndTrigger" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding EndTrigger}"/>
+            <presenters:CachedContentPresenter Name="EndTrigger" DataContext="{Binding EndTrigger}"/>
         </TabItem>
     </TabControl>
 </UserControl>

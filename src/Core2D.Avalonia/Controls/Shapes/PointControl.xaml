@@ -24,13 +24,13 @@
             </Grid>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
         <TabItem Header="Shape" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Shape}"/>
+            <presenters:CachedContentPresenter Name="Shape" DataContext="{Binding Shape}"/>
         </TabItem>
     </TabControl>
 </UserControl>

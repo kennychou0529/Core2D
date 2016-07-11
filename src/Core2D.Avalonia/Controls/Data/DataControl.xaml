@@ -17,7 +17,7 @@
                 <Menu Grid.Row="0" HorizontalAlignment="Right" IsVisible="{Binding Record, Converter={Static converters:IsNotNullConverter.Instance}}">
                     <MenuItem Header="X" Command="{Static Editor:Commands.ResetRecordCommand}" CommandParameter="{Binding}"/>
                 </Menu>
-                <presenters:CachedContentPresenter DataContext="{Binding Record}" Grid.Row="1"/>
+                <presenters:CachedContentPresenter Name="Record" DataContext="{Binding Record}" Grid.Row="1"/>
             </Grid>
         </TabItem>
         <TabItem Header="Properties" Classes="property">

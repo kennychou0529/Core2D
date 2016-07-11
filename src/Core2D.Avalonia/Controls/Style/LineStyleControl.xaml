@@ -25,7 +25,7 @@
             </Grid>
         </TabItem>
         <TabItem Header="FixedLength" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding FixedLength}"/>
+            <presenters:CachedContentPresenter Name="FixedLength" DataContext="{Binding FixedLength}"/>
         </TabItem>
     </TabControl>
 </UserControl>

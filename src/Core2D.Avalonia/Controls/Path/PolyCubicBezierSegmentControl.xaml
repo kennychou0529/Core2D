@@ -22,7 +22,7 @@
             <ListBox Name="points" Items="{Binding Points}" Classes="default"/>
         </TabItem>
         <TabItem Header="Selected" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding #points.SelectedItem}"/>
+            <presenters:CachedContentPresenter Name="pointsSelectedItem" DataContext="{Binding #points.SelectedItem}"/>
         </TabItem>
     </TabControl>
 </UserControl>

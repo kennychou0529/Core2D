@@ -55,7 +55,7 @@
                                 </ListBox>
                             </TabItem>
                             <TabItem Header="Selected" Classes="property">
-                                <presenters:CachedContentPresenter DataContext="{Binding #shapes.SelectedItem}"/>
+                                <presenters:CachedContentPresenter Name="shapesSelectedItem" DataContext="{Binding #shapes.SelectedItem}"/>
                             </TabItem>
                         </TabControl>
                     </TabItem>
@@ -71,7 +71,7 @@
                                 </ListBox>
                             </TabItem>
                             <TabItem Header="Selected" Classes="property">
-                                <presenters:CachedContentPresenter DataContext="{Binding #connectors.SelectedItem}"/>
+                                <presenters:CachedContentPresenter Name="connectorsSelectedItem" DataContext="{Binding #connectors.SelectedItem}"/>
                             </TabItem>
                         </TabControl>
                     </TabItem>
@@ -79,10 +79,10 @@
             </Grid>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
     </TabControl>
 </UserControl>

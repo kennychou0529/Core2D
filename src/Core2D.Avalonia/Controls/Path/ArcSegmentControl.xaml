@@ -26,10 +26,10 @@
             </Grid>
         </TabItem>
         <TabItem Header="Point" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Point}"/>
+            <presenters:CachedContentPresenter Name="Point" DataContext="{Binding Point}"/>
         </TabItem>
         <TabItem Header="Size" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Size}"/>
+            <presenters:CachedContentPresenter Name="Size" DataContext="{Binding Size}"/>
         </TabItem>
     </TabControl>
 </UserControl>

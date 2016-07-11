@@ -54,22 +54,22 @@
             <TabControl Classes="default">
                 <TabItem Header="PointShape" Classes="property">
                     <ScrollViewer>
-                        <presenters:CachedContentPresenter DataContext="{Binding PointShape}"/>
+                        <presenters:CachedContentPresenter Name="PointShape" DataContext="{Binding PointShape}"/>
                     </ScrollViewer>
                 </TabItem>
                 <TabItem Header="PointStyle" Classes="property">
                     <ScrollViewer>
-                        <presenters:CachedContentPresenter DataContext="{Binding PointStyle}"/>
+                        <presenters:CachedContentPresenter Name="PointStyle" DataContext="{Binding PointStyle}"/>
                     </ScrollViewer>
                 </TabItem>
                 <TabItem Header="SelectionStyle" Classes="property">
                     <ScrollViewer>
-                        <presenters:CachedContentPresenter DataContext="{Binding SelectionStyle}"/>
+                        <presenters:CachedContentPresenter Name="SelectionStyle" DataContext="{Binding SelectionStyle}"/>
                     </ScrollViewer>
                 </TabItem>
                 <TabItem Header="HelperStyle" Classes="property">
                     <ScrollViewer>
-                        <presenters:CachedContentPresenter DataContext="{Binding HelperStyle}"/>
+                        <presenters:CachedContentPresenter Name="HelperStyle" DataContext="{Binding HelperStyle}"/>
                     </ScrollViewer>
                 </TabItem>
             </TabControl>

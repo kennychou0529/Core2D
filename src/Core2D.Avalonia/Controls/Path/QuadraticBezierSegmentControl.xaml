@@ -19,10 +19,10 @@
             </Grid>
         </TabItem>
         <TabItem Header="Point1" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Point1}"/>
+            <presenters:CachedContentPresenter Name="Point1" DataContext="{Binding Point1}"/>
         </TabItem>
         <TabItem Header="Point2" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Point2}"/>
+            <presenters:CachedContentPresenter Name="Point2" DataContext="{Binding Point2}"/>
         </TabItem>
     </TabControl>
 </UserControl>

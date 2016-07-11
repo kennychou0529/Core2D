@@ -23,6 +23,6 @@
                 </DataTemplate>
             </DropDown.DataTemplates>
         </DropDown>
-        <presenters:CachedContentPresenter DataContext="{Binding CurrentDatabase}" Grid.Row="2"/>
+        <presenters:CachedContentPresenter Name="CurrentDatabase" DataContext="{Binding CurrentDatabase}" Grid.Row="2"/>
     </Grid>
 </UserControl>

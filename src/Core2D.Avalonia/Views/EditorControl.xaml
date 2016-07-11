@@ -224,7 +224,7 @@
                         <project:ProjectControl DataContext="{Binding Project}"/>
                     </TabItem>
                     <TabItem Header="Options" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Project.Options}"/>
+                        <presenters:CachedContentPresenter Name="ProjectOptions" DataContext="{Binding Project.Options}"/>
                     </TabItem>
                     <TabItem Header="Images" Classes="property">
                         <project:ImagesControl DataContext="{Binding Project}"/>
@@ -260,7 +260,7 @@
                 <TabControl Classes="bottom">
                     <TabItem Header="Shape" Classes="property">
                         <ScrollViewer>
-                            <presenters:CachedContentPresenter DataContext="{Binding Project.CurrentContainer.CurrentShape}"/>
+                            <presenters:CachedContentPresenter Name="ProjectCurrentContainerCurrentShape" DataContext="{Binding Project.CurrentContainer.CurrentShape}"/>
                         </ScrollViewer>
                     </TabItem>
                     <TabItem Header="Data" Classes="property">
@@ -275,12 +275,12 @@
                     </TabItem>
                     <TabItem Header="Container" Classes="property">
                         <ScrollViewer>
-                            <presenters:CachedContentPresenter DataContext="{Binding Project.CurrentContainer}"/>
+                            <presenters:CachedContentPresenter Name="ProjectCurrentContainer" DataContext="{Binding Project.CurrentContainer}"/>
                         </ScrollViewer>
                     </TabItem>
                     <TabItem Header="Template" Classes="property">
                         <ScrollViewer>
-                            <presenters:CachedContentPresenter DataContext="{Binding Project.CurrentTemplate}"/>
+                            <presenters:CachedContentPresenter Name="ProjectCurrentTemplate" DataContext="{Binding Project.CurrentTemplate}"/>
                         </ScrollViewer>
                     </TabItem>
                 </TabControl>

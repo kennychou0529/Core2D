@@ -20,7 +20,7 @@
             </Grid>
         </TabItem>
         <TabItem Header="Owner" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Owner}"/>
+            <presenters:CachedContentPresenter Name="Owner" DataContext="{Binding Owner}"/>
         </TabItem>
         <TabItem Header="Shapes" Classes="property">
             <TabControl Classes="default">
@@ -34,7 +34,7 @@
                     </ListBox>
                 </TabItem>
                 <TabItem Header="Selected" Classes="property">
-                    <presenters:CachedContentPresenter DataContext="{Binding #shapes.SelectedItem}"/>
+                    <presenters:CachedContentPresenter Name="shapesSelectedItem" DataContext="{Binding #shapes.SelectedItem}"/>
                 </TabItem>
             </TabControl>
         </TabItem>

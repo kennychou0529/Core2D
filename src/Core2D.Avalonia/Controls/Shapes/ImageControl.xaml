@@ -24,22 +24,22 @@
                 <TextBox Text="{Binding Key, Mode=TwoWay}" Classes="left" Grid.Row="4" Grid.Column="1"/>
                 <TabControl Classes="default" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2">
                     <TabItem Header="TopLeft" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding TopLeft}"/>
+                        <presenters:CachedContentPresenter Name="TopLeft" DataContext="{Binding TopLeft}"/>
                     </TabItem>
                     <TabItem Header="BottomRight" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding BottomRight}"/>
+                        <presenters:CachedContentPresenter Name="BottomRight" DataContext="{Binding BottomRight}"/>
                     </TabItem>
                 </TabControl>
             </Grid>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
         <TabItem Header="Style" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Style}"/>
+            <presenters:CachedContentPresenter Name="Style" DataContext="{Binding Style}"/>
         </TabItem>
     </TabControl>
 </UserControl>

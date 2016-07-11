@@ -9,7 +9,19 @@
              xmlns:Designer="clr-namespace:Core2D.Editor.Designer;assembly=Core2D"
              Design.DataContext="{Static Designer:DesignerContext.Path}"
              Design.Width="250" Design.Height="400">
-    <TabControl Classes="default">
+    <StackPanel Background="Yellow">
+        <TextBlock Text="Hello from Path" Classes="default"></TextBlock>
+        <Rectangle Width="100" Height="50" Fill="Orange"/>
+        <ListBox Name="listBox" Background="Red" VirtualizationMode="None">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBoxItem>Path</ListBoxItem>
+        </ListBox>
+    </StackPanel>
+    <!--<TabControl Classes="default">
         <TabItem Header="Path" Classes="property">
             <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,*">
                 <TextBlock Text="Name" Classes="left" Grid.Row="0" Grid.Column="0"/>
@@ -21,16 +33,16 @@
             </Grid>
         </TabItem>
         <TabItem Header="Geometry" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Geometry}"/>
+            <presenters:CachedContentPresenter Name="Geometry" DataContext="{Binding Geometry}"/>
         </TabItem>
         <TabItem Header="State" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding State}"/>
+            <presenters:CachedContentPresenter Name="State" DataContext="{Binding State}"/>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
         <TabItem Header="Style" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Style}"/>
+            <presenters:CachedContentPresenter Name="Style" DataContext="{Binding Style}"/>
         </TabItem>
-    </TabControl>
+    </TabControl>-->
 </UserControl>

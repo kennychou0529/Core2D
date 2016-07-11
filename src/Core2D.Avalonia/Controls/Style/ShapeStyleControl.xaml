@@ -15,24 +15,24 @@
             <style:StyleControl/>
         </TabItem>
         <TabItem Header="Stroke" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Stroke}"/>
+            <presenters:CachedContentPresenter Name="Stroke" DataContext="{Binding Stroke}"/>
         </TabItem>
         <TabItem Header="Fill" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Fill}"/>
+            <presenters:CachedContentPresenter Name="Fill" DataContext="{Binding Fill}"/>
         </TabItem>
         <TabItem Header="Text" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding TextStyle}"/>
+            <presenters:CachedContentPresenter Name="TextStyle" DataContext="{Binding TextStyle}"/>
         </TabItem>
         <TabItem Header="Line" Classes="property">
             <TabControl Classes="default">
                 <TabItem Header="LineStyle" Classes="property">
-                    <presenters:CachedContentPresenter DataContext="{Binding LineStyle}"/>
+                    <presenters:CachedContentPresenter Name="LineStyle" DataContext="{Binding LineStyle}"/>
                 </TabItem>
                 <TabItem Header="StartArrow" Classes="property">
-                    <presenters:CachedContentPresenter DataContext="{Binding StartArrowStyle}"/>
+                    <presenters:CachedContentPresenter Name="StartArrowStyle" DataContext="{Binding StartArrowStyle}"/>
                 </TabItem>
                 <TabItem Header="EndArrow" Classes="property">
-                    <presenters:CachedContentPresenter DataContext="{Binding EndArrowStyle}"/>
+                    <presenters:CachedContentPresenter Name="EndArrowStyle" DataContext="{Binding EndArrowStyle}"/>
                 </TabItem>
             </TabControl>
         </TabItem>

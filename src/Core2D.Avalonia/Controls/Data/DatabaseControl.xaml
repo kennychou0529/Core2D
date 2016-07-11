@@ -22,7 +22,7 @@
             <data:ColumnsControl/>
         </TabItem>
         <TabItem Header="Selected" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding CurrentRecord}"/>
+            <presenters:CachedContentPresenter Name="CurrentRecord" DataContext="{Binding CurrentRecord}"/>
         </TabItem>
     </TabControl>
 </UserControl>

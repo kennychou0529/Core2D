@@ -33,13 +33,13 @@
                         </Grid>
                     </TabItem>
                     <TabItem Header="Background" Classes="property">
-                        <presenters:CachedContentPresenter DataContext="{Binding Background}"/>
+                        <presenters:CachedContentPresenter Name="Background" DataContext="{Binding Background}"/>
                     </TabItem>
                 </TabControl>
             </Grid>
         </TabItem>
         <TabItem Header="Data" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding Data}"/>
+            <presenters:CachedContentPresenter Name="Data" DataContext="{Binding Data}"/>
         </TabItem>
     </TabControl>
 </UserControl>

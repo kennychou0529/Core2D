@@ -1,7 +1,10 @@
 ﻿// Copyright (c) Wiesław Šoltés. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
+using Avalonia;
 using Avalonia.Controls;
+using Avalonia.LogicalTree;
 using Avalonia.Markup.Xaml;
+using Avalonia.Media;
 
 namespace Core2D.Avalonia.Controls.Shapes
 {
@@ -24,6 +27,12 @@ namespace Core2D.Avalonia.Controls.Shapes
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+        }
+
+        public override void Render(DrawingContext context)
+        {
+            System.Diagnostics.Debug.WriteLine("Render PathControl");
+            base.Render(context);
         }
     }
 }

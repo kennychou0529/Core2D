@@ -45,7 +45,7 @@
             </Grid>
         </TabItem>
         <TabItem Header="Selected" Classes="property">
-            <presenters:CachedContentPresenter DataContext="{Binding CurrentShape}"/>
+            <presenters:CachedContentPresenter Name="CurrentShape" DataContext="{Binding CurrentShape}"/>
         </TabItem>
     </TabControl>
 </UserControl>
